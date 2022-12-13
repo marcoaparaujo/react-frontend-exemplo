@@ -7,6 +7,8 @@ import FormGroup from '../components/form-group';
 
 import { mensagemSucesso } from '../components/toastr';
 
+import '../custom.css';
+
 class CadastroUsuario extends React.Component {
   state = {
     nome: '',
@@ -35,7 +37,7 @@ class CadastroUsuario extends React.Component {
                     value={this.state.nome}
                     className='form-control'
                     name='nome'
-                    onChange={(e) => this.setState({ nome: e.target.value })}
+                    // onChange={(e) => this.setState({ nome: e.target.value })}
                   />
                 </FormGroup>
                 <FormGroup label='Email: *' htmlFor='inputEmail'>
